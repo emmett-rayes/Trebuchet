@@ -6,4 +6,7 @@ readme = "README.md"
 license = "LICENSE"
 authors = ["Emmett Rayes <emmett.rayes@icloud.com>"]
 
+[workspace]
+members = ["lib"]
+
 [dependencies]
