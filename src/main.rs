@@ -101,6 +101,13 @@ fn main() {
     trace!("OK({})\n", image_checksum);
 
     info!("Transmission complete.");
+
+    loop {
+        let mut c = 0u8;
+        if port.read(std::slice::from_mut(&mut c)).is_ok() {
+            print!("{}", c as char);
+        }
+    }
 }
 
 fn open_image_file(path: &Path) -> Vec<u8> {
