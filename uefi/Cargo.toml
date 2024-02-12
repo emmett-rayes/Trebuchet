@@ -1,0 +1,14 @@
+[package]
+name = "trebuchet_uefi"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "trebuchet"
+path = "src/main.rs"
+
+[dependencies]
+uefi = "0.26.0"
+uefi-services = "0.23.0"
+log = "0.4.20"
+trebuchet_lib = { path = "../lib" }
