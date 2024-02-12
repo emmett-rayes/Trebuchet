@@ -10,3 +10,10 @@ authors = ["Emmett Rayes <emmett.rayes@icloud.com>"]
 members = ["uefi", "lib"]
 
 [dependencies]
+clap = { version = "4.5.0", features = ["derive"] }
+env_logger = "0.11.1"
+indicatif = "0.17.8"
+indicatif-log-bridge = "0.2.2"
+log = "0.4.20"
+serialport = "4.3.0"
+trebuchet_lib = { path = "lib" }
